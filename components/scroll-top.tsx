@@ -41,7 +41,7 @@ export function ScrollTop() {
           exit={{ opacity: 0, y: 12 }}
           transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           style={{ viewTransitionName: "site-top" }}
-          className={`on-dark fixed right-3 z-30 flex size-11 items-center justify-center rounded-full bg-plum text-porcelain shadow-lg ring-1 ring-porcelain/30 transition-colors hover:bg-aubergine sm:right-5 lg:bottom-5 ${trayShowing ? "bottom-20" : "bottom-3 sm:bottom-5"}`}
+          className={`on-dark fixed right-3 z-30 flex size-11 items-center justify-center rounded-full bg-plum text-porcelain shadow-lg ring-2 ring-page transition-colors hover:bg-aubergine sm:right-5 lg:bottom-5 ${trayShowing ? "bottom-20" : "bottom-3 sm:bottom-5"}`}
         >
           <svg
             aria-hidden
