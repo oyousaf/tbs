@@ -66,18 +66,21 @@
 }
 
 ::view-transition-group(site-header),
-::view-transition-group(site-tray) {
+::view-transition-group(site-tray),
+::view-transition-group(site-top) {
   animation: none;
   z-index: 100;
 }
 
 ::view-transition-old(site-header),
-::view-transition-old(site-tray) {
+::view-transition-old(site-tray),
+::view-transition-old(site-top) {
   display: none;
 }
 
 ::view-transition-new(site-header),
-::view-transition-new(site-tray) {
+::view-transition-new(site-tray),
+::view-transition-new(site-top) {
   animation: none;
 }
 

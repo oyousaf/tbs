@@ -56,13 +56,22 @@ export function Hero() {
                   <span className="shrink-0 text-sm text-porcelain/85 tabular-nums">
                     from {gbp(fromPrice(r.id))}
                   </span>
+                  <span className="sr-only">. {r.line}</span>
                 </Link>
               </li>
             ))}
           </ul>
-          <p className="mt-4 pl-9 text-porcelain/90" aria-live="polite">
-            {regions[active].line}
-          </p>
+          {/* Every line shares one grid cell, so the tallest sets the height and hovering can't move the layout. */}
+          <div aria-hidden className="mt-4 grid pl-9 text-porcelain/90">
+            {regions.map((r, i) => (
+              <p
+                key={r.id}
+                className={`col-start-1 row-start-1 transition-opacity duration-200 ${active === i ? "opacity-100" : "invisible opacity-0"}`}
+              >
+                {r.line}
+              </p>
+            ))}
+          </div>
         </nav>
 
         <div className="relative mx-auto aspect-square w-full max-w-sm lg:col-span-3 lg:max-w-none">

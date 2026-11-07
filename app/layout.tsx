@@ -3,6 +3,7 @@ import { Familjen_Grotesk, Sansita_Swashed } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { MotionRoot } from "@/components/motion-root";
+import { ScrollTop } from "@/components/scroll-top";
 import { Tray } from "@/components/tray";
 import { business } from "@/lib/site";
 import "./globals.css";
@@ -57,11 +58,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </a>
         <MotionRoot>
           <Header />
-          <main id="main" className="grow">
+          <main id="main" tabIndex={-1} className="grow outline-hidden">
             {children}
           </main>
           <Footer />
           <Tray />
+          <ScrollTop />
         </MotionRoot>
       </body>
     </html>
