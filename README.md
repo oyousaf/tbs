@@ -1,6 +1,6 @@
 # The Beauty Spot
 
-An unofficial website and booking system concept for a beauty salon, built using Next.js 16, TypeScript 5, Tailwind CSS 4 and Motion 14. It isn't affiliated with or endorsed by the salon.
+A booking system concept for a beauty salon, built using Next.js 16, TypeScript 5, Tailwind CSS 4 and Motion 14. It isn't affiliated with or endorsed by the salon.
 
 The booking system is a working showcase. It runs on a sample diary in the browser, so nothing here creates a real appointment, takes a payment or sends a message.
 
@@ -9,4 +9,3 @@ npm install
 npm run dev
 ```
 
-The site is `noindex` unless `SITE_INDEXABLE=true` is set.
